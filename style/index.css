@@ -167,6 +167,23 @@ html {
 }
 
 @media (max-width: 800px) {
+	.header {
+		justify-content: center;
+		justify-items: center;
+	}
+	.navbar {
+		flex-flow: column;
+		/* justify-content: center; */
+		margin-left: 40%;
+		width: 40%;
+	}
+	.name1{
+		margin-top: 2rem;
+		margin-left: 11%
+	}
+
+
+
 	html {
 		color: red;
 	}
