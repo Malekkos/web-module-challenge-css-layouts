@@ -250,3 +250,15 @@ html {
 		width: 40%
 	}
 }
+@media (max-width: 390px) {
+	 .projectsimgs {
+		width: 30%;
+		height: 11rem;
+		margin-left: 2rem;
+	 }
+	 .projectsHeader {
+		font-size: 2rem;
+	 }
+
+
+}
