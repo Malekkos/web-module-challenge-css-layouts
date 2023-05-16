@@ -190,6 +190,7 @@ html {
 	.aboutSection {
 		padding: 0rem;
 		/* justify-content: flex-start; */
+		height: 50rem;
 	}
 	.img img {
 		margin: 0rem;
@@ -203,13 +204,29 @@ html {
 		margin-left: 1.5rem;
 	}
 }
+@media (max-width: 600px) {
+	.projectsHeader {
+		font-size: 3rem;
+		height: 3.5rem;
+	}
+	.projectsimgs {
+		width: 35%;
+		height: 17rem;
+	}
+	.projectsimgs:hover {
+		width: 40%;
+		height: 20rem;
+	}
+
+
+}
 @media (max-width: 500px) {
 	.aboutSection {
 		flex-flow: column;
 		justify-content: center;
 		/* align-content: center; */
 		height: 45rem;
-		border: 1px solid black;
+		/* border: 1px solid black; */
 	}
 	.img, .aboutMe1{
 		margin-left: 25%;
@@ -217,12 +234,19 @@ html {
 	.buttonToProjects {
 		margin-left: 2.0rem
 	}
-	}
 	.img img {
 		width: 50vw;
 	}
 	.buttonToProjects, .aboutMe2 {
 		font-size: 1rem;
-
+	}
+	/* .projectsimgs:hover {
+		width: 38%;
+		height: 17rem;
+	} */
+	.projectsimgs {
+		margin-left: 1rem;
+		height: 15rem;
+		width: 40%
 	}
 }
