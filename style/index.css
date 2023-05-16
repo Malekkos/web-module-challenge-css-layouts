@@ -50,6 +50,7 @@ table {
 
 html {
   font-size: 62.5%;
+	max-width: 100%;
 }
 .header {
   width: 100vw;
@@ -89,7 +90,7 @@ html {
 }
 .img img { 
 	height: 30rem;
-	width: 45rem;
+	width: 50%;
 	margin: 5rem;
 }
 .buttonToProjects {
@@ -109,6 +110,8 @@ html {
 	justify-content: center;
 	/* border: 1px solid black; */
 	align-items: flex-start;
+	width: 50%;
+	padding-right: 4rem;
 }
 .name2 {
 	font-size: 2.3rem;
@@ -161,4 +164,101 @@ html {
 	width: 25%;
 	height: 22rem;
 	margin: 0rem;
+}
+
+@media (max-width: 800px) {
+	.header {
+		justify-content: center;
+		justify-items: center;
+	}
+	.navbar {
+		flex-flow: column;
+		/* justify-content: center; */
+		margin-left: 40%;
+		width: 40%;
+	}
+	.name1{
+		margin-top: 2rem;
+		margin-left: 11%
+	}
+
+
+
+	html {
+		color: red;
+	}
+	.aboutSection {
+		padding: 0rem;
+		/* justify-content: flex-start; */
+		height: 50rem;
+	}
+	.img img {
+		margin: 0rem;
+		width: 95%;
+		height: 100%;
+	}
+	.aboutMe2 {
+		font-size: 1.1rem;
+	}
+	.buttonToProjects {
+		margin-left: 1.5rem;
+	}
+}
+@media (max-width: 600px) {
+	.projectsHeader {
+		font-size: 3rem;
+		height: 3.5rem;
+	}
+	.projectsimgs {
+		width: 35%;
+		height: 17rem;
+	}
+	.projectsimgs:hover {
+		width: 40%;
+		height: 20rem;
+	}
+
+
+}
+@media (max-width: 500px) {
+	.aboutSection {
+		flex-flow: column;
+		justify-content: center;
+		/* align-content: center; */
+		height: 45rem;
+		/* border: 1px solid black; */
+	}
+	.img, .aboutMe1{
+		margin-left: 25%;
+	}
+	.buttonToProjects {
+		margin-left: 2.0rem
+	}
+	.img img {
+		width: 50vw;
+	}
+	.buttonToProjects, .aboutMe2 {
+		font-size: 1rem;
+	}
+	/* .projectsimgs:hover {
+		width: 38%;
+		height: 17rem;
+	} */
+	.projectsimgs {
+		margin-left: 1rem;
+		height: 15rem;
+		width: 40%
+	}
+}
+@media (max-width: 390px) {
+	 .projectsimgs {
+		width: 30%;
+		height: 11rem;
+		margin-left: 2rem;
+	 }
+	 .projectsHeader {
+		font-size: 2rem;
+	 }
+
+
 }
