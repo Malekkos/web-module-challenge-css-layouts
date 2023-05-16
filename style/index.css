@@ -50,6 +50,7 @@ table {
 
 html {
   font-size: 62.5%;
+	max-width: 100%;
 }
 .header {
   width: 100vw;
@@ -89,7 +90,7 @@ html {
 }
 .img img { 
 	height: 30rem;
-	width: 45rem;
+	width: 50%;
 	margin: 5rem;
 }
 .buttonToProjects {
@@ -109,6 +110,8 @@ html {
 	justify-content: center;
 	/* border: 1px solid black; */
 	align-items: flex-start;
+	width: 50%;
+	padding-right: 4rem;
 }
 .name2 {
 	font-size: 2.3rem;
@@ -161,4 +164,48 @@ html {
 	width: 25%;
 	height: 22rem;
 	margin: 0rem;
+}
+
+@media (max-width: 800px) {
+	html {
+		color: red;
+	}
+	.aboutSection {
+		padding: 0rem;
+		/* justify-content: flex-start; */
+	}
+	.img img {
+		margin: 0rem;
+		width: 95%;
+		height: 100%;
+	}
+	.aboutMe2 {
+		font-size: 1.1rem;
+	}
+	.buttonToProjects {
+		margin-left: 1.5rem;
+	}
+}
+@media (max-width: 500px) {
+	.aboutSection {
+		flex-flow: column;
+		justify-content: center;
+		/* align-content: center; */
+		height: 45rem;
+		border: 1px solid black;
+	}
+	.img, .aboutMe1{
+		margin-left: 25%;
+	}
+	.buttonToProjects {
+		margin-left: 2.0rem
+	}
+	}
+	.img img {
+		width: 50vw;
+	}
+	.buttonToProjects, .aboutMe2 {
+		font-size: 1rem;
+
+	}
 }
